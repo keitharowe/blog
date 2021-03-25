@@ -28,7 +28,7 @@ twitter_username: keitharowe
 github_username:  keithalanrowe
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
