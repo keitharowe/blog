@@ -5,4 +5,4 @@ permalink: /about/
 ---
 # About Me
 ## Keith Alan Rowe
-![Keith A. Rowe](/_assets/images/headshot-keith-a-rowe.png)
+![Keith A. Rowe]({{ site.baseurl }}/assets/images/headshot-keith-a-rowe.png)
