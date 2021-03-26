@@ -6,10 +6,10 @@ categories: innoviation
 ---
 # Introduction - Demo
 For the first time, Aztek held a two-day Innovation Day. Here's a high-level summary of what I accomplished:
-- <i class="icon-book"></i>Learn<i class="icon-check"></i> [Azure Prepaid Compute](#azure-prepaid-compute) at 40% savings (Day 1)
-- <i class="icon-hand-right"></i>Build<i class="icon-check"></i> [Static site generators](#static-site-generators) - Jekyll / GitHub Pages / Ruby (Day 1)
-- <i class="icon-hand-right"></i>Build<i class="icon-check"></i> [HSTS](#hsts) Aztek Template Project and AztekWeb.com - HSTS
-- <i class="icon-smile">Do<i class="icon-check"></i> [Umbraco Unattended Installs](#umbraco-unattended-installs) - AztekWeb.com Upgrade
+- <i class="icon-book"></i> Learn <i class="icon-check"></i> [Azure Prepaid Compute](#azure-prepaid-compute) at 40% savings (Day 1)
+- <i class="icon-hand-right"></i> Build <i class="icon-check"></i> [Static site generators](#static-site-generators) - Jekyll / GitHub Pages / Ruby (Day 1)
+- <i class="icon-hand-right"></i> Build <i class="icon-check"></i> [HSTS](#hsts) Aztek Template Project and AztekWeb.com - HSTS
+- <i class="icon-smile"> Do <i class="icon-check"></i> [Umbraco Unattended Installs](#umbraco-unattended-installs) - AztekWeb.com Auto-Upgrade
 
 ## Azure Prepaid Compute
 Microsoft would rather have customers on a prepaid plan for numerous reasons. When moving to the new plans they offer significant discounts on the main "cloud" functions such as virtual machines or compute. We moved our core dev and uat infrastructure over to this new prepaid plan.
