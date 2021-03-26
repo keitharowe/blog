@@ -12,21 +12,21 @@ For the first time, Aztek held a two-day Innovation Day. Here's a high-level sum
 - <i class="icon-smile">Do<i class="icon-check"></i> [Umbraco Unattended Installs](#umbraco-unattended-installs) - AztekWeb.com Upgrade
 
 ## Azure Prepaid Compute
-Microsoft would rather have customers on a prepaid plan for numerous reasons. When moving to the new plans they offer significant discounts on the main "cloud" functions such as virtal machines or compute. We moved our core dev and uat infrastructure over to this new prepaid plan.
+Microsoft would rather have customers on a prepaid plan for numerous reasons. When moving to the new plans they offer significant discounts on the main "cloud" functions such as virtual machines or compute. We moved our core dev and uat infrastructure over to this new prepaid plan.
 * Moved the dev and uat servers to a new prepaid plan to save approx 40%
 * Took a good amount of reading about the different levels, restrictions and options
-* Read about Azure File Storage; currently our servers are not on the levels that qualifiy for discounts
+* Read about Azure File Storage; currently our servers are not on the levels that qualify for discounts
 
 ### References
 * [https://docs.microsoft.com/en-us/azure/virtual-machines/prepay-reserved-vm-instances#buy-a-reserved-vm-instance](https://docs.microsoft.com/en-us/azure/virtual-machines/prepay-reserved-vm-instances#buy-a-reserved-vm-instance)
 
 ## Static Site Generators
 Wow. How awesome is this blog? Markdown. GitHub. No CSS? Brilliant!
-* Learned about Jekyll, templating, static HTML generation, font awesome, and GitHub Pages
+* Learned about Jekyll, templates, static HTML generation, font awesome, and GitHub Pages
 * Uninstalled and reinstalled about 5 times
 * More command line; more compile issues; another local webserver?
 * Ruby and Gems! 
-* GitHub built in worfklows for publishing and free hosting
+* GitHub built in workflows for publishing and free hosting
 * Maybe try a custom domain next?
 * <span class="icon-heart"></span> Markdown
 
@@ -34,6 +34,7 @@ Wow. How awesome is this blog? Markdown. GitHub. No CSS? Brilliant!
 * [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/)
 * [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 * [GitHub Pages](https://pages.github.com/)
+* [Spell Check for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
 ## HSTS
 What is HSTS? HSTS stands for HTTP Strict Transport Security. Why is this important? HSTS helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking. It allows web servers to declare that web browsers (or other complying user agents) should automatically interact with it using only HTTPS connections.<sup>1</sup>
@@ -42,9 +43,9 @@ What is HSTS? HSTS stands for HTTP Strict Transport Security. Why is this import
 * Moved the HSTS header (found the localhost SSL issue)
 * Updated AztekWeb.com / deployed to production
 * Rule order change and the outbound header addition with a negate for localhost
-* HSTS not supported in our "core" Windows Hosting Enviornment; need Windows Server 2019 and higher. However, this is baked in finally! 
+* HSTS not supported in our "core" Windows Hosting Environment; need Windows Server 2019 and higher. However, this is baked in finally! 
 
-Basically, one needs to force https THEN to the canonical to satisify the requirement for HSTS. As such I shuffled the rules. So http://aztekweb.com needs to to to https://aztekweb.com then to the canonical. 
+Basically, one needs to force https THEN to the canonical to satisfy the requirement for HSTS. As such I shuffled the rules. So http://aztekweb.com needs to to to https://aztekweb.com then to the canonical. 
 
 Here is what the new rules look like:
 
@@ -115,6 +116,10 @@ New rule added for outbound rule:
 1. [Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
 
 ## Umbraco Unattended Installs
-Reviewed how Umbraco has added support for auto-upgrades. Sarah and I did not do the auto-install feature however. 
+Reviewed how Umbraco has added support for auto-upgrades. Sarah and I did not do the auto-install feature however. We also discussed my dream of moving to a full automated Umbraco upgrade. As such, we moved a couple of environmental variables to Azure DevOps.
 
+* AztekWeb.com is updated to version 12.1.2
+* Will add the auto-upgrade to the template project
 
+### References 
+* [https://our.umbraco.com/documentation/getting-started/setup/upgrading/general](https://our.umbraco.com/documentation/getting-started/setup/upgrading/general)
