@@ -6,10 +6,10 @@ categories: innoviation
 ---
 # Introduction - Demo
 For the first time, Aztek held a two-day Innovation Day. Here's a high-level summary of what I accomplished:
-- <i class="icon-book"></i><i class="icon-check"></i> Learn [Azure Prepaid Compute](#azure-prepaid-compute) at 40% savings (Day 1)
-- <i class="icon-hand-right"></i><i class="icon-check"></i> [Static site generators](#static-site-generators) - Jekyll / GitHub Pages / Ruby (Day 1)
-- <i class="icon-hand-right"></i><i class="icon-check"></i> [HSTS](#hsts) Aztek Template Project and AztekWeb.com - HSTS
-- <i class="icon-check"></i> [Umbraco Unattended Installs](#umbraco-unattended-installs) - AztekWeb.com Upgrade
+- <i class="icon-book"></i>Learn<i class="icon-check"></i> [Azure Prepaid Compute](#azure-prepaid-compute) at 40% savings (Day 1)
+- <i class="icon-hand-right"></i>Build<i class="icon-check"></i> [Static site generators](#static-site-generators) - Jekyll / GitHub Pages / Ruby (Day 1)
+- <i class="icon-hand-right"></i>Build<i class="icon-check"></i> [HSTS](#hsts) Aztek Template Project and AztekWeb.com - HSTS
+- <i class="icon-smile">Do<i class="icon-check"></i> [Umbraco Unattended Installs](#umbraco-unattended-installs) - AztekWeb.com Upgrade
 
 ## Azure Prepaid Compute
 Microsoft would rather have customers on a prepaid plan for numerous reasons. When moving to the new plans they offer significant discounts on the main "cloud" functions such as virtal machines or compute. We moved our core dev and uat infrastructure over to this new prepaid plan.
@@ -36,6 +36,8 @@ Wow. How awesome is this blog? Markdown. GitHub. No CSS? Brilliant!
 * [GitHub Pages](https://pages.github.com/)
 
 ## HSTS
+What is HSTS? HSTS stands for HTTP Strict Transport Security. Why is this important? HSTS helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie hijacking. It allows web servers to declare that web browsers (or other complying user agents) should automatically interact with it using only HTTPS connections.<sup>1</sup>
+
 * Updated our default template for Umbraco automation by creating a pull request
 * Moved the HSTS header (found the localhost SSL issue)
 * Updated AztekWeb.com / deployed to production
@@ -45,6 +47,7 @@ Wow. How awesome is this blog? Markdown. GitHub. No CSS? Brilliant!
 Basically, one needs to force https THEN to the canonical to satisify the requirement for HSTS. As such I shuffled the rules. So http://aztekweb.com needs to to to https://aztekweb.com then to the canonical. 
 
 Here is what the new rules look like:
+
       <rules>
         <rule name="AddTrailingSlashRule">
           <match url="(.*[^/])$"/>
@@ -109,8 +112,9 @@ New rule added for outbound rule:
 * [https://docs.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/site/hsts](https://docs.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/site/hsts)
 * [https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-10-version-1709/iis-10-version-1709-hsts](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-10-version-1709/iis-10-version-1709-hsts)
 
+1. [Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
 
 ## Umbraco Unattended Installs
-
+Reviewed how Umbraco has added support for auto-upgrades. Sarah and I did not do the auto-install feature however. 
 
 
