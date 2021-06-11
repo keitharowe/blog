@@ -2,7 +2,7 @@
 layout: post
 title:  "Aztek 2-Day Innovation Day"
 date:   2021-03-26 11:15:00 -0400
-categories: innoviation
+categories: innovation
 ---
 # Introduction - Demo
 For the first time, Aztek held a two-day Innovation Day. Here's a high-level summary of what I accomplished:
