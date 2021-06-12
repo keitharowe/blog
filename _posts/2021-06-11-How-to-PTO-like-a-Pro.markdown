@@ -13,7 +13,7 @@ DISCLAIMER: I work at [Aztek](https://www.aztekweb.com/), a small web developmen
 ## You are not that important
 Let go, trust your team, they are strong and have your back. They can survive for a week, or two, or maybe even longer while you are gone. Not sure if you have a capable team? Try it. Tried it and it didn't work as your cell phone was ringing constantly? Sounds like there might be some other deeper issues to solve first. 
 
-## The universe punishes me taking PTO
+## The universe punishes me for taking PTO
 I've heard too often that people get punished when they take time off or return from PTO with a ton more work and a mountain of emails, and wish they didn't take time off at all. Wow, really?! True, that emails will pile up while you are out, however, there are some good Outlook hygiene rules that I use (another post), and some extra effort work that needs to be done to prepare for your time off.
 
 ## Guide
