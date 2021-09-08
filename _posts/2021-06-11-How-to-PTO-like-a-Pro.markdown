@@ -18,7 +18,7 @@ I've heard too often that people get punished when they take time off or return 
 
 ## Guide
 
-### Get your shit in order
+### Get your tasks in order
 Get your work/projects/tasks in order. Don't leave for PTO with 10 open things such as people waiting to hear back from you on thing X, and don't respond to 10 open things the afternoon before you leave. Unable to close the loop on all your items, a simple communication to your team or client that it will get addressed when you return. It may be a bit hard to face the fact that this thing will not get done until X weeks, however, set the proper expectation with your audience. 
 
 ### 7Ps - Prior Proper Planning Prevents Piss Poor Performance
